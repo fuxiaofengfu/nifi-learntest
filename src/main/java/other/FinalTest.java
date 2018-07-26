@@ -23,7 +23,10 @@ public class FinalTest {
 		});
 		String ss = "1590 hadoop    20   0 2976256  98892  13404 S   0.0  5.3   0:32.03 java";
 		ss = ss.replaceAll("\\s+"," ");
-		System.out.println(ss);
+		String[] split = ss.split(" ");
+
+		System.out.println(split[8]);
+		System.out.println(split[9]);
 
 	}
 }
